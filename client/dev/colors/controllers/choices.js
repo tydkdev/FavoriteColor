@@ -5,7 +5,7 @@
     .controller('ChoicesController', function ($scope, ChoicesService) {
       $scope.choices;
 
-      $scope.PostChoice = function() {
+      $scope.PostChoice = function () {
         if ($scope.selected) {
           ChoicesService.postChoice($scope.selected)
             .then(function (response) {
@@ -17,8 +17,8 @@
       };
 
       ChoicesService.getChoices()
-        .then(function (choices) {
-          $scope.choices = choices;
+        .then(function (response) {
+          $scope.choices = response;
         }, function (error) {
           console.error(error);
         });
