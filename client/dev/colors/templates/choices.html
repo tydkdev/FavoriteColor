@@ -1,12 +1,19 @@
 <div ng-controller="ChoicesController">
-  <div class="panel panel-default">
-    <div class="panel-heading">Color Choices</a></div>
-    <div class="panel-body">
-      <div class="list-group">
-        <a ng-repeat="choice in choices.choices" ng-href="#" class="list-group-item">
-          <div>{{choice}}</div>
-        </a>
+  <form class="spacer" ng-submit="submit()">
+    <div class="row">
+      <div class="col-xs-3">
+        <label for="exampleSelect1">Choose a Color:</label>
+        <select class="form-control" id="exampleSelect1">
+          <option ng-repeat="choice in choices.choices" ng-href="#">{{choice}}</option>
+        </select>
       </div>
     </div>
-  </div>
+    <div class="row">&nbsp;
+    </div>
+    <div class="row">
+      <div class="col-xs-3">
+        <button type="submit" id="submit" value="Submit" class="btn btn-primary">Submit</button>
+      </div>
+    </div>
+  </form>
 </div>
