@@ -18,6 +18,30 @@
             });
 
           return deferred.promise;
+        },
+
+        postChoice: function (colorChoice) {
+          var jsonBody = "{ \"color\": \"" + colorChoice + "\" }";
+
+          var deferred = $q.defer();
+
+            $http.post(urlBase + '/colors', jsonBody)
+              .then(function (response) {
+                console.log("Successful: response from submitting data to server was: " + response);
+                deferred.resolve({
+                  data: response
+                });
+              },
+
+              function (response) {
+                console.log("Error: response from submitting data to server was: " + response);
+                deferred.reject({
+                  data: response
+                });
+              }
+            );
+
+          return deferred.promise;
         }
       };
     });

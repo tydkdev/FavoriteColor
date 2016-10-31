@@ -3,16 +3,14 @@
     <div class="row">
       <div class="col-xs-3">
         <label for="exampleSelect1">Choose a Color:</label>
-        <select class="form-control" id="exampleSelect1">
-          <option ng-repeat="choice in choices.choices" ng-href="#">{{choice}}</option>
-        </select>
+          <select class="form-control" id="exampleSelect1" ng-options="choice as choice for choice in choices.choices track by choice" ng-model="selected"></select>
       </div>
     </div>
     <div class="row">&nbsp;
     </div>
     <div class="row">
       <div class="col-xs-3">
-        <button type="submit" id="submit" value="Submit" class="btn btn-primary">Submit</button>
+        <button ng-click="PostChoice()" class="btn btn-primary">Submit</button>
       </div>
     </div>
   </form>

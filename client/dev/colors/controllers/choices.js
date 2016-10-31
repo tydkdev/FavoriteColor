@@ -5,10 +5,14 @@
     .controller('ChoicesController', function ($scope, ChoicesService) {
       $scope.choices;
 
-      $scope.submit = function() {
-        if ($scope.text) {
-          $scope.list.push(this.text);
-          $scope.text = '';
+      $scope.PostChoice = function() {
+        if ($scope.selected) {
+          ChoicesService.postChoice($scope.selected)
+            .then(function (response) {
+              console.log(response);
+            }, function (error) {
+              console.error(error);
+            });
         }
       };
 
