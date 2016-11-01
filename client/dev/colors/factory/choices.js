@@ -7,12 +7,13 @@
 
       return {
         getChoices: function () {
-          var deferred = $q.defer(),
-            httpPromise = $http.get(urlBase + '/choices');
+          var deferred = $q.defer();
+          var httpPromise = $http.get(urlBase + '/choices');
 
-          httpPromise.success(function (response) {
-            deferred.resolve(response);
-          })
+          httpPromise
+            .success(function (response) {
+              deferred.resolve(response);
+            })
             .error(function (error) {
               console.error('Error: ' + error);
             });
@@ -21,12 +22,13 @@
         },
 
         getResults: function () {
-          var deferred = $q.defer(),
-            httpPromise = $http.get(urlBase + '/results');
+          var deferred = $q.defer();
+          var httpPromise = $http.get(urlBase + '/results');
 
-          httpPromise.success(function (response) {
-            deferred.resolve(response);
-          })
+          httpPromise
+            .success(function (response) {
+              deferred.resolve(response);
+            })
             .error(function (error) {
               console.error('Error: ' + error);
             });
@@ -34,26 +36,21 @@
           return deferred.promise;
         },
 
-        postChoice: function (colorChoice) {
-          var jsonBody = "{ \"color\": \"" + colorChoice + "\" }";
+        postChoice: function (choice) {
+          var colorChoice = "{ \"color\": \"" + choice + "\" }";
 
           var deferred = $q.defer();
+          var httpPromise = $http.post(urlBase + '/colors', colorChoice);
 
-            $http.post(urlBase + '/colors', jsonBody)
-              .then(function (response) {
-                console.log("Successful: response from submitting data to server was: " + response);
-                deferred.resolve({
-                  data: response
-                });
-              },
-
-              function (response) {
-                console.log("Error: response from submitting data to server was: " + response);
-                deferred.reject({
-                  data: response
-                });
-              }
-            );
+          httpPromise
+            .success(function (response) {
+              deferred.resolve({
+                data: response
+              });
+            })
+            .error(function (error) {
+              console.error('Error: ' + error);
+            });
 
           return deferred.promise;
         }
