@@ -23,6 +23,7 @@
               // console.log(response);
               $scope.choice = response;
               $scope.GetResults();
+              $scope.selected = null;
             }, function (error) {
               console.error(error);
             });

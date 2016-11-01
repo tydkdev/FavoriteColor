@@ -1,37 +1,36 @@
 <div ng-controller="ChoicesController">
   <div class="container-fluid">
     <h3>Choose Your Favorite Color</h3>
-    <form name="ColorChoiceForm">
-      <div class="row top15">
-        <div class="col-xs-3">
-          <select class="form-control" ng-options="choice as choice for choice in choices.choices track by choice"
-                  ng-model="selected">
-            <option value="">Choose a Color...</option>
-          </select>
-        </div>
-      </div>
-      <div class="row top15">
-        <div class="col-xs-3">
-          <button ng-click="PostChoice()" class="btn btn-success">
-            Submit
-          </button>
-        </div>
-      </div>
-    </form>
     <div class="row top15">
       <div class="col-xs-3">
+        <form name="ColorChoiceForm">
+          <select class="form-control" ng-options="choice as choice for choice in choices.choices track by choice"
+                  ng-model="selected">
+            <option value="">Select a Color...</option>
+          </select>
+          <div class="top15">
+            <button ng-click="PostChoice()" class="btn btn-success">
+              Submit
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="row top60">
+      <div class="col-xs-3">
+        <h4>Results</h4>
         <div>
           <table class="table table-bordered table-striped">
             <thead>
             <tr>
-              <th>Color</th>
-              <th>Votes</th>
+              <th class="text-xs-center">Color</th>
+              <th class="text-xs-center">Votes</th>
             </tr>
             </thead>
             <tbody>
             <tr ng-repeat="result in results.results">
               <td>{{ result.color }}</td>
-              <td class="-align-right">{{ result.count }}</td>
+              <td class="text-xs-right">{{ result.count }}</td>
             </tr>
             </tbody>
           </table>
