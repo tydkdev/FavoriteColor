@@ -1,7 +1,7 @@
 ;(function(ng) {
   'use strict';
 
-  ng.module('fav-color')
+  ng.module('favColor')
     .service('choices', [
       '$q',
       function($q) {

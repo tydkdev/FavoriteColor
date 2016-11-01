@@ -4,7 +4,7 @@ describe('colors', function() {
     var _scope;
     var CONTROLLER_NAME = 'colors as ctrl';
 
-    beforeEach(module('fav-color'));
+    beforeEach(module('favColor'));
 
     beforeEach(inject(function($injector) {
       _scope = $injector.get('$rootScope').$new();

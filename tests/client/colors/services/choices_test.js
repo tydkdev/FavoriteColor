@@ -3,7 +3,7 @@
 describe('choices', function() {
   var _choices;
 
-  beforeEach(module('fav-color'));
+  beforeEach(module('favColor'));
 
   beforeEach(inject(function($injector) {
     _choices = $injector.get('choices');

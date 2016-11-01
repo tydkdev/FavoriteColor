@@ -1,7 +1,7 @@
 ;(function (ng) {
   'use strict';
 
-  ng.module('fav-color')
+  ng.module('favColor')
     .factory('ChoicesService', function ($q, $http) {
       var urlBase = 'http://localhost:8091';
 

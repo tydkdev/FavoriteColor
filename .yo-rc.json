@@ -1,7 +1,7 @@
 {
   "generator-ng-fullstack": {
     "username": "garystafford",
-    "appName": "fav-color",
+    "appName": "favColor",
     "stack": "client",
     "server": "",
     "client": "ng1",

@@ -1,8 +1,8 @@
 {
-  "name": "fav-color",
-  "main": "fav-color.js",
+  "name": "favColor",
+  "main": "favColor.js",
   "version": "0.0.1",
-  "homepage": "https://github.com//fav-color",
+  "homepage": "https://github.com//favColor",
   "authors": ["garystafford <email>"],
   "description": "desc",
   "keywords": [],
