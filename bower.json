@@ -1,10 +1,12 @@
 {
   "name": "favColor",
-  "main": "favColor.js",
-  "version": "0.0.1",
-  "homepage": "https://github.com//favColor",
-  "authors": ["garystafford <email>"],
-  "description": "desc",
+  "main": "app.js",
+  "version": "0.1.0",
+  "homepage": "https://github.com/garystafford/fav-color-ngweb",
+  "authors": [
+    "Gary A. Stafford <garystafford@rochester.rr.com>"
+  ],
+  "description": "Favorite Color Demonstration Application",
   "keywords": [],
   "license": "MIT",
   "ignore": [
@@ -26,8 +28,9 @@
     "angular-messages": "~1.5.x",
     "angular-route": "~1.5.x",
     "angular-resource": "~1.5.x",
-    "bootstrap": "3.3.1",
-    "fontawesome": "~4.3.0"
+    "bootstrap": "4.0.0-alpha.5",
+    "fontawesome": "~4.3.0",
+    "tether": "^1.3.7"
   },
   "devDependencies": {
     "angular-mocks": "~1.5.x"

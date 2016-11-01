@@ -4,12 +4,12 @@
   ng.module('favColor')
     .controller('ChoicesController', function ($scope, ChoicesService) {
       $scope.choices;
+      $scope.choice;
       $scope.results;
 
       $scope.GetChoices = function () {
         ChoicesService.getChoices()
           .then(function (response) {
-            // console.log(response);
             $scope.choices = response;
           }, function (error) {
             console.error(error);
@@ -21,6 +21,8 @@
           ChoicesService.postChoice($scope.selected)
             .then(function (response) {
               // console.log(response);
+              $scope.choice = response;
+              $scope.GetResults();
             }, function (error) {
               console.error(error);
             });
@@ -30,7 +32,6 @@
       $scope.GetResults = function () {
         ChoicesService.getResults()
           .then(function (response) {
-            // console.log(response);
             $scope.results = response;
           }, function (error) {
             console.error(error);
