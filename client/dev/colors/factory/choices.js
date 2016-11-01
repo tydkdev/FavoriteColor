@@ -10,8 +10,22 @@
           var deferred = $q.defer(),
             httpPromise = $http.get(urlBase + '/choices');
 
-          httpPromise.success(function (choices) {
-            deferred.resolve(choices);
+          httpPromise.success(function (response) {
+            deferred.resolve(response);
+          })
+            .error(function (error) {
+              console.error('Error: ' + error);
+            });
+
+          return deferred.promise;
+        },
+
+        getResults: function () {
+          var deferred = $q.defer(),
+            httpPromise = $http.get(urlBase + '/results');
+
+          httpPromise.success(function (response) {
+            deferred.resolve(response);
           })
             .error(function (error) {
               console.error('Error: ' + error);

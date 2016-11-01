@@ -1,17 +1,48 @@
-<div ng-controller="ChoicesController">
-  <form class="spacer" ng-submit="submit()">
+<div ng-controller="ChoicesController" ng="GetResults();">
+  <form name="ColorChoiceForm" class="spacer">
     <div class="row">
       <div class="col-xs-3">
-        <label for="exampleSelect1">Choose a Color:</label>
-          <select class="form-control" id="exampleSelect1" ng-options="choice as choice for choice in choices.choices track by choice" ng-model="selected"></select>
+        <select class="form-control" ng-options="choice as choice for choice in choices.choices track by choice"
+                ng-model="selected">
+          <option value="">Choose a Color...</option>
+        </select>
       </div>
     </div>
     <div class="row">&nbsp;
     </div>
     <div class="row">
       <div class="col-xs-3">
-        <button ng-click="PostChoice()" class="btn btn-primary">Submit</button>
+        <button ng-click="PostChoice();GetResults()" class="btn btn-success">
+          Submit
+        </button>
       </div>
     </div>
   </form>
+  <div class="row">&nbsp;
+  </div>
+  <div class="row">
+    <div class="col-xs-3">
+      <div>
+        <table class="table table-bordered table-striped">
+          <thead>
+          <tr>
+            <td>
+              Color
+            </td>
+            <td>
+              Count
+            </td>
+          </tr>
+          </thead>
+
+          <tbody>
+          <tr ng-repeat="result in results.results">
+            <td>{{ result.color }}</td>
+            <td>{{ result.count }}</td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
 </div>
