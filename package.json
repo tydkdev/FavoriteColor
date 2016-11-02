@@ -4,7 +4,7 @@
   "main": "app.js",
   "scripts": {
     "start": "aliv",
-    "test": "karma start --single-run --browsers PhantomJS", //"gulp client.unit_test",
+    "test": "karma start --single-run --browsers PhantomJS",
     "build-dist": "gulp client.build:dist"
   },
   "dependencies": {
