@@ -1,6 +1,6 @@
 'use strict';
 
-describe('choices', function() {
+xdescribe('choices', function() {
   var _choices;
 
   beforeEach(module('favColor'));
@@ -13,7 +13,7 @@ describe('choices', function() {
 	it('should be an object', function() {
 		expect(typeof _choices).toBe('object');
 	})
-	  
+
     it('should doSomething', function() {
       _choices.doSomething();
     });

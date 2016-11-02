@@ -1,6 +1,6 @@
 'use strict';
 
-describe('choices', function() {
+xdescribe('choices', function() {
   var _choices;
 
   beforeEach(module('favColor'));
