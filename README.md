@@ -6,7 +6,7 @@ _Work in Progress_
 
 ## Introduction
 
-Angular 1.5 front-end web application. Application makes API calls to a Spring Boot RESTful microservice, backed by MongoDB. Part of an upcoming article on CI/CD with Spring Boot, HashiCorp product-line, and AWS.
+An Angular 1.5 front-end web application. Application makes API calls to a Spring Boot RESTful microservice, backed by MongoDB. Part of an upcoming article on CI/CD with Spring Boot, HashiCorp product-line, and AWS.
 
 ## Quick Start
 
@@ -15,7 +15,9 @@ To clone, build, test, and run the Favorite Color web application locally. Requi
 ```bash
 git clone https://github.com/garystafford/fav-color-ngweb.git
 cd fav-color-ngweb
+npm install -g bower gulp-cli
 npm install
+bower install
 npm start
 ```
 
