@@ -6,6 +6,3 @@ node_js:
 before_script:
   - npm install -g bower gulp-cli mocha
   - bower install
-
-script:
-  - gulp client.unit_test
