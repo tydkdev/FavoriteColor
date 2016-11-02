@@ -6,11 +6,11 @@ _Work in Progress_
 
 ## Introduction
 
-An Angular 1.5 front-end web application. Application makes API calls to a Spring Boot RESTful microservice, backed by MongoDB. Part of an upcoming article on CI/CD with Spring Boot, HashiCorp product-line, and AWS.
+An Angular 1.5 front-end web application, which makes API calls to the [Favorite Color Service](https://github.com/garystafford/fav-color-service) Spring Boot RESTful microservice, backed by MongoDB. Part of an upcoming article on CI/CD with Spring Boot, HashiCorp product-line, and AWS.
 
 ## Quick Start
 
-To clone, build, test, and run the Favorite Color web application locally. Requires MongoDB to be pre-installed and running on port `27017`.
+To clone, build, test, and run this application locally, requires the [Favorite Color Service](https://github.com/garystafford/fav-color-service) is first running locally, on `http://localhost:8091`.
 
 ```bash
 git clone https://github.com/garystafford/fav-color-ngweb.git
@@ -21,4 +21,4 @@ bower install
 npm start
 ```
 
-Application will start on `http://localhost:3000`.
+The application will start on `http://localhost:3000`.
