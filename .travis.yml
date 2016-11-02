@@ -8,4 +8,4 @@ before_script:
   - bower install
 
 script:
-  - gulp
+  - gulp client.unit_test
