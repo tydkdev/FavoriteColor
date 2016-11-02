@@ -3,7 +3,6 @@
   "version": "0.1.0",
   "main": "app.js",
   "scripts": {
-    "postinstall": "bower install",
     "start": "aliv",
     "test": "gulp client.unit_test",
     "build-dist": "gulp client.build:dist"
