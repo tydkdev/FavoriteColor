@@ -4,7 +4,7 @@
   "main": "app.js",
   "scripts": {
     "start": "aliv",
-    "test": "karma start --single-run --browsers PhantomJS"
+    "test": "sudo karma start --single-run --browsers PhantomJS"
   },
   "dependencies": {
     "helmet": "^3.0.0"
