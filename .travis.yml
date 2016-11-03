@@ -8,7 +8,7 @@ install:
 - npm install -g bower gulp-cli mocha
 - bower install
 script:
-- npm build
+- gulp client.build:dist
 - cd client/
 - zip -r dist.zip dist
 - sh ./deploy_travisci.sh
