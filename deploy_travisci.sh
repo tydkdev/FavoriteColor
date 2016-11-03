@@ -16,6 +16,6 @@ git init
 git config user.name "travis-ci"
 git config user.email "${COMMIT_AUTHOR_EMAIL}"
 
-git add dist.zip
+git add *.zip
 git commit -m "Deploy Travis CI Build #${TRAVIS_BUILD_NUMBER} artifacts to GitHub"
 git push --force --quiet "https://${GH_TOKEN}@${GH_COLOR_ARTIFACT_REPO}" master:ngweb
