@@ -8,7 +8,7 @@
 
 #set -x
 
-zip -r client/dist_0_2_${TRAVIS_BUILD_NUMBER}.zip client/dist/
+zip -r client/dist-0.2.${TRAVIS_BUILD_NUMBER}.zip client/dist/
 
 cd client
 
