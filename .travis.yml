@@ -12,6 +12,7 @@ script:
 - gulp client.build:dist
 - cd client/
 - zip -r dist.zip dist
+- cd ../
 - sh ./deploy_travisci.sh
 env:
   global:
