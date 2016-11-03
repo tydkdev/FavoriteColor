@@ -10,9 +10,7 @@ install:
 - bower install
 script:
 - gulp client.build:dist
-- cd client/
-- zip -r dist.zip dist
-- cd ../
+- zip -r client/dist.zip client/dist/
 - sh ./deploy_travisci.sh
 env:
   global:
