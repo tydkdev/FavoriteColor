@@ -5,6 +5,7 @@ before_install:
   - sudo apt-get -qq update
   - sudo apt-get install -y zip
 install:
+- npm install
 - npm install -g bower gulp-cli mocha
 - bower install
 script:
