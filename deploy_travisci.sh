@@ -8,9 +8,9 @@
 
 #set -x
 
-zip -r client/dist-ngweb-0.2.${TRAVIS_BUILD_NUMBER}.zip client/dist/
-
 cd client
+
+zip -r dist-ngweb-0.2.${TRAVIS_BUILD_NUMBER}.zip dist/
 
 git init
 git config user.name "travis-ci"
