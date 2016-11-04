@@ -3,8 +3,7 @@ import uglify from 'gulp-uglify';
 import {path, tasks} from './const';
 
 const JS = [
-  path.DIST + '**/*.js', 
-  '!' + path.DIST + 'bower_components/**/*'
+  path.DIST + '**/*.js'
 ];
 
 gulp.task(tasks.CLIENT_BUILD_JS_DIST, () => {
