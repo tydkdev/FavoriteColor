@@ -7,7 +7,6 @@
     "test": "sudo karma start --single-run --browsers PhantomJS"
   },
   "dependencies": {
-    "helmet": "^3.0.0"
   },
   "devDependencies": {
     "aliv": "^1.2.0",

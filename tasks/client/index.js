@@ -12,8 +12,7 @@ gulp.task(tasks.CLIENT_BUILD_DIST, () => {
       [
         tasks.CLIENT_IMAGE_DIST,
         tasks.CLIENT_BUILD_JS_DIST,
-        tasks.CLIENT_BUILD_CSS_DIST,
-        tasks.CLIENT_BUILD_PACKAGES_DIST
+        tasks.CLIENT_BUILD_CSS_DIST
       ],
 
       resolve

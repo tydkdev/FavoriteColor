@@ -4,7 +4,8 @@ import rev from 'gulp-rev-append';
 import {path, tasks} from './const';
 
 const VIEWS = [
-  path.DIST + '**/*.html'
+  path.DIST + '**/*.html',
+  '!' + path.DIST + 'bower_components'
 ];
 
 gulp.task(tasks.CLIENT_VIEWS_DIST, () => {

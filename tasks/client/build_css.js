@@ -3,7 +3,8 @@ import cssmin from 'gulp-clean-css';
 import {path, tasks} from './const';
 
 const CSS = [
-  path.DIST + '**/*.css'
+  path.DIST + '**/*.css',
+  '!' + path.DIST + 'bower_components'
 ];
 
 gulp.task(tasks.CLIENT_BUILD_CSS_DIST, () => {
