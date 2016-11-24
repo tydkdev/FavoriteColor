@@ -7,3 +7,4 @@ typings
 /npm-debug.log
 /client/dist/
 /client/*.zip
+.DS_Store

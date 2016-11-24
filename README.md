@@ -1,16 +1,14 @@
 [![Build Status](https://travis-ci.org/garystafford/fav-color-ngweb.svg?branch=master)](https://travis-ci.org/garystafford/fav-color-ngweb)
 
-# Favorite Color Front-end Web Application
-
-_Work in Progress_
+# Favorite Color Front-End Web Application
 
 ## Introduction
 
-An Angular 1.5 front-end web application, which makes API calls to the [Favorite Color Service](https://github.com/garystafford/fav-color-service) Spring Boot RESTful microservice, backed by MongoDB. Part of an upcoming article on CI/CD with Spring Boot, HashiCorp product-line, and AWS.
+An Angular 1.5 front-end web application, which makes API calls to the [Favorite Color Service](https://github.com/garystafford/fav-color-service) Spring Boot RESTful microservice, backed by MongoDB.
 
 ## Quick Start
 
-To clone, build, test, and run this application locally, requires the [Favorite Color Service](https://github.com/garystafford/fav-color-service) is first running locally, on `http://localhost:8091`.
+This project requires the [Favorite Color Service](https://github.com/garystafford/fav-color-service) is first running locally, on `http://localhost:8091`. To clone, build, test, and run this application locally:
 
 ```bash
 git clone https://github.com/garystafford/fav-color-ngweb.git
@@ -22,3 +20,7 @@ npm start
 ```
 
 The application will start on `http://localhost:3000`.
+
+## Results
+
+![Web UI](WebUI.png)
