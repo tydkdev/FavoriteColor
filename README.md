@@ -1,10 +1,10 @@
 [![Build Status](https://travis-ci.org/garystafford/fav-color-ngweb.svg?branch=master)](https://travis-ci.org/garystafford/fav-color-ngweb)
 
-# Favorite Color Front-End Web Application
+# Favorite Color Web Application
 
 ## Introduction
 
-An Angular 1.5 front-end web application, which makes API calls to the [Favorite Color Service](https://github.com/garystafford/fav-color-service) Spring Boot RESTful microservice, backed by MongoDB.
+An simple Angular 1.5 / Bootstrap SPA, which makes API calls to the [Favorite Color Service](https://github.com/garystafford/fav-color-service) Spring Boot RESTful microservice, backed by MongoDB.
 
 ## Quick Start
 
