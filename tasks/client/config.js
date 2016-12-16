@@ -1,8 +1,12 @@
 import gulp from 'gulp';
-var gulpNgConfig = require('gulp-ng-config');
+import {path, tasks} from './const';
+import gulpNgConfig from 'gulp-ng-config';
 
-gulp.task('client.test', function () {
-  gulp.src('configFile.json')
-    .pipe(gulpNgConfig('favColor.config'))
-    .pipe(gulp.dest('.'))
+gulp.task(tasks.CLIENT_BUILD_CONFIG_DIST, () => {
+  return gulp.src('configFile.json')
+    .pipe(gulpNgConfig('favColor', {
+      createModule: false,
+      environment: 'production'
+    }))
+    .pipe(gulp.dest(path.DIST))
 });

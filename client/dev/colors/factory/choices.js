@@ -2,8 +2,8 @@
   'use strict';
 
   ng.module('favColor')
-    .factory('ChoicesService', function ($q, $http) {
-      var urlBase = 'http://localhost:8091';
+    .factory('ChoicesService', function ($q, $http, EnvironmentConfig) {
+      var urlBase = EnvironmentConfig.api || "http://localhost/";
 
       return {
         getChoices: function () {

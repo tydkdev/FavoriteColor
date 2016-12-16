@@ -11,8 +11,8 @@ export const tasks = {
   CLIENT_BUILD_JS_DIST: 'client.build_js:dist',
   CLIENT_BUILD_PACKAGES_DIST: 'client.build_packages:dist',
   CLIENT_DEL_DIST: 'client.del:dist',
-
-  CLIENT_COPY: 'client.copy',
+  CLIENT_BUILD_CONFIG_DIST: 'client.config:dist',
+  CLIENT_COPY_DIST: 'client.copy:dist',
 
   CLIENT_UNIT_TEST: 'client.unit_test',
   CLIENT_COVERAGE: 'client.coverage',
