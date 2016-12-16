@@ -24,3 +24,7 @@ The application will start on `http://localhost:3000`.
 ## Results
 
 ![Web UI](WebUI.png)
+
+## Configuration
+
+The project uses [gulp-ng-config](https://github.com/ajwhite/gulp-ng-config) `options.environment` [option](https://github.com/ajwhite/gulp-ng-config#optionsenvironment) for specifying environment specific variables, used for distribution to Production.
