@@ -1,12 +1,14 @@
 {
   "local": {
     "EnvironmentConfig": {
-      "api": "http://localhost/"
+      "api": "http://localhost",
+      "port": "8091"
     }
   },
   "production": {
     "EnvironmentConfig": {
-      "api": "http://api.production.com/"
+      "api": "http://api.production.com",
+      "port": "8091"
     }
   }
 }
