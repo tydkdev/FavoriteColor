@@ -1,16 +1,16 @@
 {
   "local": {
-    "EnvironmentConfig": {
+    "environmentConfig": {
       "description": "For local development",
-      "api": "http://localhost",
-      "port": "8091"
+      "apiUrl": "http://localhost",
+      "apiPort": "8091"
     }
   },
   "production": {
-    "EnvironmentConfig": {
+    "environmentConfig": {
       "description": "AWS Production environment",
-      "api": "http://api.favcolor.com",
-      "port": "80"
+      "apiUrl": "http://api.favcolor.com",
+      "apiPort": "80"
     }
   }
 }

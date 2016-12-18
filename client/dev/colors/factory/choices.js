@@ -3,12 +3,12 @@
 
   ng.module('favColor')
     .factory('ChoicesService', function ($q, $http, EnvironmentConfig) {
-      var urlBase = EnvironmentConfig.api + ':' + EnvironmentConfig.port;
+      var apiBase = environmentConfig.apiUrl + ':' + environmentConfig.apiPort;
 
       return {
         getChoices: function () {
           var deferred = $q.defer();
-          var httpPromise = $http.get(urlBase + '/choices');
+          var httpPromise = $http.get(apiBase + '/choices');
 
           httpPromise
             .success(function (response) {
@@ -23,7 +23,7 @@
 
         getResults: function () {
           var deferred = $q.defer();
-          var httpPromise = $http.get(urlBase + '/results');
+          var httpPromise = $http.get(apiBase + '/results');
 
           httpPromise
             .success(function (response) {
@@ -40,7 +40,7 @@
           var colorChoice = "{ \"color\": \"" + choice + "\" }";
 
           var deferred = $q.defer();
-          var httpPromise = $http.post(urlBase + '/colors', colorChoice);
+          var httpPromise = $http.post(apiBase + '/colors', colorChoice);
 
           httpPromise
             .success(function (response) {

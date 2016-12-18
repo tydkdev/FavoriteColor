@@ -1,2 +1,2 @@
 angular.module("favColor")
-.constant("EnvironmentConfig", {"description":"For local development","api":"http://localhost","port":"8091"});
+.constant("environmentConfig", {"description":"For local development","apiUrl":"http://localhost","apiPort":"8091"});
