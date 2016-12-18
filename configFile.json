@@ -2,7 +2,7 @@
   "local": {
     "EnvironmentConfig": {
       "description": "For local development",
-      "api": "http://localhost:8091",
+      "api": "http://localhost",
       "port": "8091"
     }
   },

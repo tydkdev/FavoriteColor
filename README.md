@@ -25,6 +25,14 @@ The application will start on `http://localhost:3000`.
 
 ![Web UI](WebUI.png)
 
+## Build Production Distribution
+
+To create the build artifacts for deployment to Production on AWS, use Gulp
+
+```
+gulp client.build:dist
+```
+
 ## Environment Configuration
 
 The project uses [gulp-ng-config](https://github.com/ajwhite/gulp-ng-config) `options.environment` [option](https://github.com/ajwhite/gulp-ng-config#optionsenvironment) for specifying environment specific configuration. The master configuration, `configFile.json`, is located in the root of the project.
