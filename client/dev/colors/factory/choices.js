@@ -3,7 +3,7 @@
 
   ng.module('favColor')
     .factory('ChoicesService', function ($q, $http, EnvironmentConfig) {
-      var urlBase = EnvironmentConfig.api + ':' + EnvironmentConfig.port || "http://localhost:8091";
+      var urlBase = EnvironmentConfig.api + ':' + EnvironmentConfig.port;
 
       return {
         getChoices: function () {

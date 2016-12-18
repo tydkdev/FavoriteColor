@@ -7,7 +7,7 @@
   },
   "production": {
     "EnvironmentConfig": {
-      "api": "http://api.production.com",
+      "api": "http://api.favcolor.com",
       "port": "8091"
     }
   }

@@ -25,6 +25,18 @@ The application will start on `http://localhost:3000`.
 
 ![Web UI](WebUI.png)
 
-## Configuration
+## Environment Configuration
 
-The project uses [gulp-ng-config](https://github.com/ajwhite/gulp-ng-config) `options.environment` [option](https://github.com/ajwhite/gulp-ng-config#optionsenvironment) for specifying environment specific variables, used for distribution to Production.
+The project uses [gulp-ng-config](https://github.com/ajwhite/gulp-ng-config) `options.environment` [option](https://github.com/ajwhite/gulp-ng-config#optionsenvironment) for specifying environment specific configuration. The master configuration, `configFile.json`, is located in the root of the project.
+
+Create Local Configuration (`local`)
+
+```bash
+gulp client.config
+```
+
+Create Production Configuration (`production`)
+
+```bash
+gulp client.config:dist
+```

@@ -24,15 +24,15 @@
   ],
   "dependencies": {
     "jquery": "~3.x",
-    "angular": "~1.5.x",
-    "angular-messages": "~1.5.x",
-    "angular-route": "~1.5.x",
-    "angular-resource": "~1.5.x",
+    "angular": "~1.6.x",
+    "angular-messages": "~1.6.x",
+    "angular-route": "~1.6.x",
+    "angular-resource": "~1.6.x",
     "bootstrap": "~4.x",
     "fontawesome": "~4.x",
     "tether": "~1.x"
   },
   "devDependencies": {
-    "angular-mocks": "~1.5.x"
+    "angular-mocks": "~1.6.x"
   }
 }
