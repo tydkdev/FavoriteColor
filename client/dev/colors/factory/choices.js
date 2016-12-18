@@ -3,7 +3,7 @@
 
   ng.module('favColor')
     .factory('ChoicesService', function ($q, $http, EnvironmentConfig) {
-      var apiBase = environmentConfig.apiUrl + ':' + environmentConfig.apiPort;
+      var apiBase = EnvironmentConfig.apiUrl + ':' + EnvironmentConfig.apiPort;
 
       return {
         getChoices: function () {
