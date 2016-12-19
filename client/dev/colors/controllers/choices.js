@@ -2,7 +2,7 @@
   'use strict';
 
   ng.module('favColor')
-    .controller('ChoicesController', function ($scope, ChoicesService) {
+    .controller('ChoicesController', ['$scope', 'ChoicesService', function ($scope, ChoicesService) {
       $scope.choices;
       $scope.choice;
       $scope.results;
@@ -43,6 +43,6 @@
         $scope.GetChoices();
         $scope.GetResults();
       });
-    });
+    }]);
 
 }(window.angular));

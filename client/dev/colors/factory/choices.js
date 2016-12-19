@@ -2,7 +2,7 @@
   'use strict';
 
   ng.module('favColor')
-    .factory('ChoicesService', function ($q, $http, EnvironmentConfig) {
+    .factory('ChoicesService', ['$q', '$http', 'EnvironmentConfig', function ($q, $http, EnvironmentConfig) {
       var apiBase = EnvironmentConfig.apiUrl + ':' + EnvironmentConfig.apiPort;
 
       return {
@@ -55,5 +55,5 @@
           return deferred.promise;
         }
       };
-    });
+    }]);
 }(window.angular));
