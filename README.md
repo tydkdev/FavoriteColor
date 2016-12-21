@@ -4,9 +4,9 @@
 
 ## Introduction
 
-Part of a three-tier architecture, provisioned and deployed to AWS, using HashiCorp Packer and Terraform. Favorite Color Web Application is a simple Angular 1.5 / Bootstrap 4 SPA, which makes API calls to the [Favorite Color Service](https://github.com/garystafford/fav-color-service) Spring Boot RESTful microservice, backed by MongoDB.
+Favorite Color Web Application is part of a multi-tier Angular-Node-Spring-MongoDB application, designed to demonstrate Packer and Terraform with AWS. The Favorite Color Web Application is a simple Angular 1.5 / Bootstrap 4 SPA, which makes API calls to the [Favorite Color Service](https://github.com/garystafford/fav-color-service) Spring Boot RESTful microservice, via a Node-based [BFF](http://samnewman.io/patterns/architectural/bff/). The Favorite Color Service is backed by MongoDB. The entire application is designed to be provisioned and deployed to AWS, using HashiCorp Packer and Terraform. 
 
-Node is only used for local development and testing of the application. Node is not required to run the client-side application in Production. You can run the application using Node (`server.js`), or host with Apache (`index.html`).
+Currently, Node is only used for local development and testing of the application. Node is not required to run the client-side application in Production. You can run the application using Node (`server.js`), or host with Apache (`index.html`).
 
 ## Quick Start
 
