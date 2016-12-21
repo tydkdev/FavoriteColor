@@ -10,7 +10,7 @@
     "EnvironmentConfig": {
       "description": "AWS Production environment",
       "apiUrl": "http://api.favcolor.com",
-      "apiPort": "80"
+      "apiPort": "81"
     }
   }
 }
