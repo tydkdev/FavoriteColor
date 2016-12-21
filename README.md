@@ -4,7 +4,9 @@
 
 ## Introduction
 
-Part of a three-tier architecture, provisioned and deployed to AWS, using HashiCorp Packer and Terraform. Favorite Color Web Application is a simple Angular 1.6 / Bootstrap 4 SPA, which makes API calls to the [Favorite Color Service](https://github.com/garystafford/fav-color-service) Spring Boot RESTful microservice, backed by MongoDB. Node is used for local development and testing. Node is not required for Production. I recommend that the client-side application be run on Apache web server.
+Part of a three-tier architecture, provisioned and deployed to AWS, using HashiCorp Packer and Terraform. Favorite Color Web Application is a simple Angular 1.5 / Bootstrap 4 SPA, which makes API calls to the [Favorite Color Service](https://github.com/garystafford/fav-color-service) Spring Boot RESTful microservice, backed by MongoDB.
+
+Node is only used for local development and testing of the application. Node is not required to run the client-side application in Production. You can run the application using Node (`server.js`), or host with Apache (`index.html`).
 
 ## Quick Start
 
@@ -51,7 +53,7 @@ This will create the `configFile.js` in the `client/dist` directory.
 
 ## Build Production Distribution
 
-To create the build artifacts for deployment to Production on AWS, use one Gulp command: `client.build:dist`. This command aggregates several other commands together:
+To create the `dist` directory for deployment to Production, use one Gulp command: `client.build:dist`. This command aggregates several other commands together.
 
 ```bash
 gulp client.build:dist
@@ -59,9 +61,10 @@ gulp client.build:dist
 
 ## Run with Node in Production
 
-To run the application using Node instead of Apache as the web server, use the following commands
+To run the application using Node, instead of Apache, after deploying the `dist` directory, run the following commands, from within the `dist` directory. Environment variable, `PORT` is fully configurable. Note the values in the `configFile.js` will need to be modified for your use. They is specific to my AWS Production environment.
 
 ```bash
+npm install -g bower gulp-cli
 NODE_ENV=production npm install
 bower install --production --config.directory=bower_components
 PORT=3004 node server.js
