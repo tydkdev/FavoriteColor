@@ -7,8 +7,6 @@
     "test": "sudo karma start --single-run --browsers PhantomJS"
   },
   "dependencies": {
-    "finalhandler": "^0.5.1",
-    "http": "0.0.0",
     "serve-static": "^1.11.1"
   },
   "devDependencies": {

@@ -53,6 +53,16 @@ This will create the `configFile.js` in the `client/dist` directory.
 
 To create the build artifacts for deployment to Production on AWS, use one Gulp command: `client.build:dist`. This command aggregates several other commands together:
 
-```
+```bash
 gulp client.build:dist
+```
+
+## Run with Node in Production
+
+To run the application using Node instead of Apache as the web server, use the following commands
+
+```bash
+NODE_ENV=production npm install
+bower install --production --config.directory=bower_components
+PORT=3004 node server.js
 ```
