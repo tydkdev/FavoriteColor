@@ -9,6 +9,6 @@ const CSS = [
 
 gulp.task(tasks.CLIENT_BUILD_CSS_DIST, () => {
   return gulp.src(CSS, {base: path.DIST})
-             .pipe(cssmin())
-             .pipe(gulp.dest(path.DIST));
+    .pipe(cssmin())
+    .pipe(gulp.dest(path.DIST));
 });

@@ -15,5 +15,5 @@ gulp.task(tasks.CLIENT_UNIT_TEST, (done) => {
 
 gulp.task(tasks.CLIENT_COVERAGE, [tasks.CLIENT_UNIT_TEST], () => {
   return gulp.src('unit_coverage/**/lcov.info')
-             .pipe(coveralls());
+    .pipe(coveralls());
 });
