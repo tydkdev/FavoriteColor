@@ -59,7 +59,7 @@ gulp client.build:dist
 
 ## Run with Node in Production
 
-To host the application using Node and `serve-static`, instead of Apache, after deploying the contents of the `dist` directory, run the following commands from within the content's root directory.
+First, deploy the contents of the `dist` directory. Then, to host the application using Node and `serve-static`, instead of Apache, run the following commands from within the content's root directory.
 
 ```bash
 npm install -g bower gulp-cli
