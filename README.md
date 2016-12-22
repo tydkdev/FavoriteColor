@@ -6,7 +6,7 @@
 
 The Favorite Color Web Application is part of a multi-tier Angular-Node-Spring-MongoDB application, designed to demonstrate Packer and Terraform with AWS. The Favorite Color Web Application is a simple Angular 1.5 / Bootstrap 4 SPA, which makes API calls to the [Favorite Color Service](https://github.com/garystafford/fav-color-service) Spring Boot RESTful microservice, via a Node-based [BFF](http://samnewman.io/patterns/architectural/bff/). The Favorite Color Service is backed by MongoDB. The entire application is designed to be provisioned and deployed to AWS, using HashiCorp Packer and Terraform.
 
-Currently, Node is only used for local development and testing of the application. Node is not required to run the client-side application in Production. You can run the application using Node (`server.js`), or host with Apache (`index.html`).
+Currently, Node is only required for local development and testing of the application. Node is not required to run the client-side application in Production. You can chose to host the application with Node and `serve-static`, or host with another web server, such as Apache. I've done both, successfully.
 
 ## Quick Start for Local Development
 
@@ -59,11 +59,7 @@ gulp client.build:dist
 
 ## Run with Node in Production
 
-To run the application using Node, instead of Apache, after deploying the contents of the `dist` directory, run the following commands from within the `dist` directory.
-
-Using `NODE_ENV=production` means that only required npm packages in the `dependencies` section of the `package.json` will be installed, not npm packages in the `devDependencies` section.
-
-The environment variable, `PORT`, indicates which port to start the application on. If not set, the application will default to `8080`.
+To host the application using Node and `serve-static`, instead of Apache, after deploying the contents of the `dist` directory, run the following commands from within the content's root directory.
 
 ```bash
 npm install -g bower gulp-cli
@@ -71,3 +67,12 @@ NODE_ENV=production npm install
 bower install --production --config.directory=bower_components
 PORT=3004 node server.js
 ```
+
+Using `NODE_ENV=production` means that only required npm packages in the `dependencies` section of the `package.json` will be installed, not npm packages in the `devDependencies` section.
+
+The environment variable, `PORT`, indicates which port to start the application on. If not set, the application will default to `8080`.
+
+## Reference
+
+- [Splitting a gulpfile into multiple files](http://macr.ae/article/splitting-gulpfile-multiple-files.html)
+- [npm serve-static package](https://www.npmjs.com/package/serve-static)
