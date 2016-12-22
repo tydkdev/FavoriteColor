@@ -1,14 +1,14 @@
 {
   "local": {
     "EnvironmentConfig": {
-      "description": "For local development",
+      "description": "Call the BFF directly in a local development environment",
       "apiUrl": "http://localhost",
-      "apiPort": "8091"
+      "apiPort": "8081"
     }
   },
   "production": {
     "EnvironmentConfig": {
-      "description": "AWS Production environment",
+      "description": "Calls the BFF ELB in the AWS Production environment",
       "apiUrl": "http://api.favcolor.com",
       "apiPort": "81"
     }
