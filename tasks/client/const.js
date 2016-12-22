@@ -5,7 +5,9 @@ export const path = {
 };
 
 export const tasks = {
-  CLIENT_IMAGE_DIST: 'client.imgs:dist',
+  CLIENT_BUILD_DIST: 'client.build:dist',
+  CLIENT_BUILD_HTML_DIST: 'client.build_html:dist',
+  CLIENT_BUILD_IMAGE_DIST: 'client.build_image:dist',
   CLIENT_BUILD_CSS_DIST: 'client.build_css:dist',
   CLIENT_BUILD_JS_DIST: 'client.build_js:dist',
   CLIENT_BUILD_PACKAGES_DIST: 'client.build_packages:dist',
@@ -19,8 +21,6 @@ export const tasks = {
   CLIENT_WATCH: 'client.watch',
 
   CLIENT_RELOAD: 'client.reload',
-
-  CLIENT_BUILD_DIST: 'client.build:dist',
 
   CLIENT_BUILD_CONFIG_DEV: 'client.config'
 };
