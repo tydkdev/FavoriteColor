@@ -23,15 +23,17 @@ bower install
 npm start
 ```
 
-The application should start successfully on `http://localhost:3000`, and attempt to open it in your default web browser.
+![Local Architecture](local-bff.png)
 
 ## Results
 
-![Web UI](WebUI.png)
+The Favorite Color Web Application should start successfully on the default host and port of `http://localhost:3000`, and open it in your default web browser.
+
+![Web UI](web-ui.png)
 
 ## Configuration Management
 
-Informational only, the project uses [gulp-ng-config](https://www.npmjs.com/package/gulp-ng-config) `options.environment` [option](https://www.npmjs.com/package/gulp-ng-config#optionsenvironment) for specifying environment specific configuration. The master configuration file, `configFile.json`, is located in the root of the project.
+The project uses [gulp-ng-config](https://www.npmjs.com/package/gulp-ng-config) `options.environment` [option](https://www.npmjs.com/package/gulp-ng-config#optionsenvironment) for specifying environment specific configuration. The master configuration file, `configFile.json`, is located in the root of the project.
 
 ### Local
 

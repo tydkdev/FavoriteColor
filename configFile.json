@@ -9,7 +9,7 @@
   "production": {
     "EnvironmentConfig": {
       "description": "Calls the BFF ELB in the AWS Production environment",
-      "apiUrl": "http://api.favcolor.com",
+      "apiUrl": "http://bff.favcolor.com",
       "apiPort": "81"
     }
   }

@@ -8,3 +8,4 @@ typings
 /client/dist/
 /client/*.zip
 .DS_Store
+*.log
