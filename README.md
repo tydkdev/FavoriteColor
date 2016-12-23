@@ -4,15 +4,15 @@
 
 ## Introduction
 
-The Favorite Color Web Application is part of a multi-tier Angular-Node-Spring-MongoDB application, designed to demonstrate Packer and Terraform with AWS. The Favorite Color Web Application is a simple Angular 1.5 / Bootstrap 4 SPA, which makes API calls to the [Favorite Color Service](https://github.com/garystafford/fav-color-service) Spring Boot RESTful microservice, via a Node-based [BFF](http://samnewman.io/patterns/architectural/bff/). The Favorite Color Service is backed by MongoDB. The entire application is designed to be provisioned and deployed to AWS, using HashiCorp Packer and Terraform.
+The Favorite Color Web Application is a simple Angular 1.5 / Bootstrap 4 SPA. The web application is part of a multi-tier, Angular-Node-Spring-MongoDB sample application platform. The web application makes RESTful API calls to the [Favorite Color Spring Boot μService](https://github.com/garystafford/fav-color-service), via the Node-based Web [BFF](https://github.com/garystafford/fav-color-bff). The Favorite Color Service is backed by MongoDB.
 
-Currently, Node is only required for local development and testing of the application. Node is not required to run the client-side application in Production. You can chose to host the application with Node and `serve-static`, or host with another web server, such as Apache. I've done both, successfully.
+Currently, Node is only required for local development and testing of the application. Node is not required to run the client-side application in Production. You can chose to host the application with Node and `serve-static`, or host with another web server, such as Apache.
+
+The entire sample application platform is designed to be provisioned and deployed to AWS, using HashiCorp Packer and Terraform. The web application and BFF are designed to sit in the public subnet behind a load balancer, while the μService(s) and database(s) sit in the private subnet, also behind an internal load balancer.
 
 ## Quick Start for Local Development
 
-The Favorite Color Web Application requires that the [Favorite Color Service](https://github.com/garystafford/fav-color-service) is running, first, locally, on `http://localhost:8091`. It also required MongoDB is running.
-
-Once MongoDB and the Favorite Color Service are both up and running, clone, build, test, and run the Favorite Color Web Application, locally:
+The Favorite Color Web Application requires that the [Favorite Color μService](https://github.com/garystafford/fav-color-service), [Web BFF](https://github.com/garystafford/fav-color-bff), and MongoDB, are all up and running locally. Once MongoDB, Web BFF, and the Favorite Color μService are all up and running, to clone, build, test, and run the Favorite Color Web Application:
 
 ```bash
 git clone https://github.com/garystafford/fav-color-ngweb.git
