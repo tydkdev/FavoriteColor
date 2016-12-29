@@ -6,18 +6,11 @@
       "apiPort": "8081"
     }
   },
-  "production": {
+  "production-aws": {
     "EnvironmentConfig": {
-      "description": "[production]: Calls the Web BFF ELB in the AWS Production environment",
-      "apiUrl": "http://bff.web.fav-color.com",
+      "description": "[production]: Calls the Web ELB in the AWS Production environment",
+      "apiUrl": "http://fav-color.com",
       "apiPort": "81"
-    }
-  },
-  "production-integrated-bff": {
-    "EnvironmentConfig": {
-      "description": "[production-integrated-bff]: Calls the Web BFF directy in the AWS Production environment",
-      "apiUrl": "http://localhost",
-      "apiPort": "8081"
     }
   }
 }
