@@ -45,7 +45,7 @@ gulp client.config
 
 ### Production
 
-The `production` configuration values in the `configFile.json` will need to be modified for your use. They is specific to my AWS Production environment. If you modify the master `configFile.json` file, run the following command to recreate the `configFile.js` in the `client/dist` directory. Never modify the `configFile.js`, directly.
+The `production` and `production-integrated-bff` configuration's values in the `configFile.json` will need to be modified for your use. They is specific to my AWS Production environment. If you modify the master `configFile.json` file, run the following command to recreate the `configFile.js` in the `client/dist` directory. Never modify the `configFile.js`, directly.
 
 ```bash
 gulp client.config:dist
@@ -53,7 +53,7 @@ gulp client.config:dist
 
 ## Build Production Distribution
 
-The application uses [Gulp](http://gulpjs.com/), with [Babel](https://www.npmjs.com/package/gulp-babel), for workflow automation. To create the `client/dist` directory for deployment to Production, use one Gulp command: `client.build:dist`. This command aggregates several other commands together to build a deployable build artifact, including creating the `configFile.js`, discussed above.
+The application uses [Gulp](http://gulpjs.com/), with [Babel](https://www.npmjs.com/package/gulp-babel), for workflow automation. To create the `client/dist` directory for deployment to Production, use one Gulp command: `client.build:dist`. This command aggregates several other commands together to build a deployable build artifact, including creating the `configFile.js`, discussed above, using the `production-integrated-bff` environment values.
 
 ```bash
 gulp client.build:dist

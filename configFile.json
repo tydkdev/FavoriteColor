@@ -1,16 +1,23 @@
 {
   "local": {
     "EnvironmentConfig": {
-      "description": "Call the BFF directly in a local development environment",
+      "description": "[local]: Call the BFF directly in a local development environment",
       "apiUrl": "http://localhost",
       "apiPort": "8081"
     }
   },
   "production": {
     "EnvironmentConfig": {
-      "description": "Calls the BFF ELB in the AWS Production environment",
+      "description": "[production]: Calls the Web BFF ELB in the AWS Production environment",
       "apiUrl": "http://bff.web.fav-color.com",
       "apiPort": "81"
+    }
+  },
+  "production-integrated-bff": {
+    "EnvironmentConfig": {
+      "description": "[production-integrated-bff]: Calls the Web BFF directy in the AWS Production environment",
+      "apiUrl": "http://localhost",
+      "apiPort": "8081"
     }
   }
 }

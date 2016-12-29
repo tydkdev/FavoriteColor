@@ -6,7 +6,7 @@ gulp.task(tasks.CLIENT_BUILD_CONFIG_DIST, () => {
   return gulp.src('configFile.json')
     .pipe(gulpNgConfig('favColor', {
       createModule: false,
-      environment: 'production'
+      environment: 'production-integrated-bff'
     }))
     .pipe(gulp.dest(path.DIST))
 });
