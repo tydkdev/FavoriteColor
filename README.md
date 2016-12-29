@@ -27,7 +27,7 @@ npm start
 
 ## Results
 
-The Favorite Color Web Application should start successfully on the default host and port of `http://localhost:3000`, and open it in your default web browser.
+The Favorite Color Web Application should start successfully on the default host and port of `http://localhost:8080`, and open it in your default web browser.
 
 ![Web UI](web-ui.png)
 
@@ -67,7 +67,7 @@ First, deploy the contents of the `dist` directory. Then, to host the applicatio
 npm install -g bower gulp-cli
 NODE_ENV=production npm install
 bower install --production --config.directory=bower_components
-PORT=3004 node server.js
+PORT=8100 node server.js
 ```
 
 Using `NODE_ENV=production` means that only required npm packages in the `dependencies` section of the `package.json` will be installed, not npm packages in the `devDependencies` section.
