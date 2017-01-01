@@ -15,7 +15,7 @@
     "angular-messages": "~1.5.x",
     "angular-route": "~1.5.x",
     "angular-resource": "~1.5.x",
-    "bootstrap": "~4.x",
+    "bootstrap": "v4.0.0-alpha.5",
     "fontawesome": "~4.x",
     "tether": "~1.x"
   },
