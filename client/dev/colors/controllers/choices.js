@@ -6,10 +6,12 @@
       $scope.choices;
       $scope.choice;
       $scope.results;
+      $scope.favoriteCount;
 
       $scope.GetChoices = function () {
         ChoicesService.getChoices()
           .then(function (response) {
+            // console.log(response);
             $scope.choices = response;
           }, function (error) {
             console.error(error);
@@ -23,6 +25,7 @@
               // console.log(response);
               $scope.choice = response;
               $scope.GetResults();
+              $scope.GetFavoriteCount();
               $scope.selected = null;
             }, function (error) {
               console.error(error);
@@ -33,7 +36,25 @@
       $scope.GetResults = function () {
         ChoicesService.getResults()
           .then(function (response) {
-            $scope.results = response;
+            $scope.results = response.results;
+          }, function (error) {
+            console.error(error);
+          });
+      };
+
+      $scope.GetFavorite = function () {
+        ChoicesService.getFavorite()
+          .then(function (response) {
+            $scope.favorite = response;
+          }, function (error) {
+            console.error(error);
+          });
+      };
+
+      $scope.GetFavoriteCount = function () {
+        ChoicesService.getFavoriteCount()
+          .then(function (response) {
+            $scope.favoriteCount = response;
           }, function (error) {
             console.error(error);
           });
@@ -42,6 +63,7 @@
       $scope.$on('$viewContentLoaded', function () {
         $scope.GetChoices();
         $scope.GetResults();
+        $scope.GetFavoriteCount();
       });
     }]);
 

@@ -36,6 +36,36 @@
           return deferred.promise;
         },
 
+        getFavorite: function () {
+          var deferred = $q.defer();
+          var httpPromise = $http.get(apiBase + '/favorite');
+
+          httpPromise
+            .success(function (response) {
+              deferred.resolve(response);
+            })
+            .error(function (error) {
+              console.error('Error: ' + error);
+            });
+
+          return deferred.promise;
+        },
+
+        getFavoriteCount: function () {
+          var deferred = $q.defer();
+          var httpPromise = $http.get(apiBase + '/favorite/count');
+
+          httpPromise
+            .success(function (response) {
+              deferred.resolve(response);
+            })
+            .error(function (error) {
+              console.error('Error: ' + error);
+            });
+
+          return deferred.promise;
+        },
+
         postChoice: function (choice) {
           var colorChoice = "{ \"color\": \"" + choice + "\" }";
 
