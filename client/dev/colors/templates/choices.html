@@ -47,6 +47,10 @@
                 <td>{{ result.color }}</td>
                 <td class="text-xs-right">{{ result.count }}</td>
               </tr>
+              <tfoot class="total">
+              <td>Total</td>
+              <td class="text-xs-right"><span ng-bind=resultsCount.count></span></td>
+              </tfoot>
               </tbody>
             </table>
           </div>

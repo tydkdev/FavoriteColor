@@ -36,6 +36,21 @@
           return deferred.promise;
         },
 
+        getResultsCount: function () {
+          var deferred = $q.defer();
+          var httpPromise = $http.get(apiBase + '/results/count');
+
+          httpPromise
+            .success(function (response) {
+              deferred.resolve(response);
+            })
+            .error(function (error) {
+              console.error('Error: ' + error);
+            });
+
+          return deferred.promise;
+        },
+
         getFavorite: function () {
           var deferred = $q.defer();
           var httpPromise = $http.get(apiBase + '/favorite');
