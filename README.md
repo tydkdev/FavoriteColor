@@ -1,10 +1,8 @@
-[![Build Status](https://travis-ci.org/garystafford/fav-color-ngweb.svg?branch=master)](https://travis-ci.org/garystafford/fav-color-ngweb)
-
 # Favorite Color Web Application
 
 ## Introduction
 
-The Favorite Color Web Application is a simple Angular 1.5 / Bootstrap 4 SPA. The web application is part of a multi-tier, Angular-Node-Spring-MongoDB sample application platform. The web application makes RESTful API calls to the [Favorite Color Spring Boot μService](https://github.com/garystafford/fav-color-service), via the Node-based Web [BFF](https://github.com/garystafford/fav-color-bff). The Favorite Color Service is backed by MongoDB.
+The Favorite Color Web Application is a simple Angular 1.5 / Bootstrap 4 SPA. The web application is part of a multi-tier, Angular-Node-Spring-MongoDB sample application platform. The web application makes RESTful API calls to the [Favorite Color Spring Boot μService](https://github.com/tydkdev/FavoriteColor), via the Node-based Web [BFF](https://github.com/tydkdev/fav-color-bff). The Favorite Color Service is backed by MongoDB.
 
 Currently, Node is only required for local development and testing of the application. Node is not required to run the client-side application in Production. You can chose to host the application with Node and `serve-static`, or host with another web server, such as Apache.
 
@@ -12,7 +10,7 @@ The entire sample application platform is designed to be provisioned and deploye
 
 ## Quick Start for Local Development
 
-The Favorite Color Web Application requires that the [Favorite Color μService](https://github.com/garystafford/fav-color-service), [Web BFF](https://github.com/garystafford/fav-color-bff), and MongoDB, are all up and running locally. Once MongoDB, Web BFF, and the Favorite Color μService are all up and running, to clone, build, test, and run the Favorite Color Web Application:
+The Favorite Color Web Application requires that the [Favorite Color μService](https://github.com/tydkdev/FavoriteColor.git), [Web BFF](https://github.com/tydkdev/fav-color-bff), and MongoDB, are all up and running locally. Once MongoDB, Web BFF, and the Favorite Color μService are all up and running, to clone, build, test, and run the Favorite Color Web Application:
 
 ```bash
 git clone https://github.com/garystafford/fav-color-ngweb.git
