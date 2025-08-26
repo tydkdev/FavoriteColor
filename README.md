@@ -13,7 +13,7 @@ The entire sample application platform is designed to be provisioned and deploye
 The Favorite Color Web Application requires that the [Favorite Color μService](https://github.com/tydkdev/FavoriteColor.git), [Web BFF](https://github.com/tydkdev/fav-color-bff), and MongoDB, are all up and running locally. Once MongoDB, Web BFF, and the Favorite Color μService are all up and running, to clone, build, test, and run the Favorite Color Web Application:
 
 ```bash
-git clone https://github.com/garystafford/fav-color-ngweb.git
+git clone https://github.com/tydkdev/FavoriteColor.git
 cd fav-color-ngweb
 npm install -g bower gulp-cli
 npm install
